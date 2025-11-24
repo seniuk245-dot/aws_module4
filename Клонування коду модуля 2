@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Клонування коду модуля 2"
+git clone https://github.com/mazurmykh/aws-module2
+cd aws-module2
+pip install --user pandas boto3 2>/dev/null || pip3 install --user pandas boto3
+python convert.py
+echo "Готово"
